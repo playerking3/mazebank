@@ -1,0 +1,71 @@
+:root{
+    --texto: #222222;
+    --background: #dadada;
+    --principal: #C51F22;
+    --sombra: #8f191b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+}
+/* página inicial ------------------------------------------------------------- */
+/* cabeçalho ------------------------------------------------------------ */
+.header{
+    background-color: var(--background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.conta-icon i{
+    font-size: 30px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.conta-icon{
+    text-decoration: none;
+    color: var(--texto);
+}
+/* botões padronizados --------------------------------------------------------- */
+
+.botao1{
+    padding: 10px;
+    border-radius: 12px;
+    border-bottom: solid 2px var(--sombra);
+    background-color: var(--principal);
+    margin: 5px;
+    color: var(--background);
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botao1:hover{
+    border-bottom: solid 4px var(--sombra);
+}
+
+/* inicio --------------------------------------------------------------------------------------------- */
+
+.bvtxt, .bvimg{
+    background-color: var(--sombra);
+}
+.bvimg img{
+    height: 350px;
+}
+.bemvindo{
+    display: flex;
+    flex-direction: column;
+}
