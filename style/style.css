@@ -11,11 +11,27 @@
     flex-wrap: wrap;
     font-family: 'Roboto', sans-serif;
 }
+
+
+*::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+*::-webkit-scrollbar-track {
+    background: var(--background);        /* color of the tracking area */
+    padding: 2px;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #4a0d08;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+/*    border: 2px solid var(--background);   creates padding around scroll thumb */
+
+}
 /* página inicial ------------------------------------------------------------- */
 /* cabeçalho ------------------------------------------------------------ */
 .header{
     background-color: var(--background);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -59,13 +75,56 @@
 
 /* inicio --------------------------------------------------------------------------------------------- */
 
-.bvtxt, .bvimg{
+.bemvindo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: var(--sombra);
 }
-.bvimg img{
-    height: 350px;
+
+.bemvindo img{
+    width: 100%;
 }
-.bemvindo{
+
+.bvtxt{
+    align-self: center;
+    text-align: center;
+    padding: 50px;
+    color: var(--background);
+}
+
+/*seção de vantágens------------------------------------------------------------------------------------*/
+
+.vantagens{
+    background-color: var(--texto);
+    color: var(--background);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+}
+
+.vantagemgrid{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.vantagem{
+    text-align: center;
+    padding: 8px;
+}
+
+.vantagem *{
+    margin: 8px;
+}
+
+.vantagem i{
+    font-size: xx-large;
+}
+
+/*rodápé -------------------------------------------------------------------------------------------------*/
+
+.footer{
+    background-color: var(--background);
+    padding: 18px;
 }
