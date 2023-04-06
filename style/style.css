@@ -111,7 +111,9 @@
 
 .vantagem{
     text-align: center;
-    padding: 8px;
+    padding: 6px;
+    border-left: solid 2px var(--background);
+    border-right: solid 2px var(--background);
 }
 
 .vantagem *{
