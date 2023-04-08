@@ -29,6 +29,11 @@
 
 }
 /* página inicial ------------------------------------------------------------- */
+
+.inicio{
+    background-color: var(--background);
+}
+
 /* cabeçalho ------------------------------------------------------------ */
 .header{
     background-color: var(--background);
@@ -102,6 +107,10 @@
     padding: 32px;
 }
 
+.vantagens h2{
+    color: var(--principal);
+}
+
 .vantagemgrid{
     margin: 50px;
     display: grid;
@@ -123,6 +132,60 @@
 .vantagem i{
     font-size: xx-large;
 }
+
+/* transição de seções ------------------------------------------------------------------------------ */
+
+.vantagens {
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 40px),50% 100%,0 calc(100% - 40px));
+  }
+.contas {
+    clip-path: polygon(0 0,50% 40px,100% 0,100% 100%,0 100%);
+    margin-top: -30px;
+}
+
+/* Seção de contas -------------------------------------------------------------------------------------- */
+
+.contas{
+    background-color: var(--texto);
+    color: var(--background);
+}
+
+.contas h1{
+    font-size: 3em;
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.controle{
+    color: var(--principal);
+    font-size: 1.4em;
+}
+
+.contas h2{
+    text-align: center;
+    padding: 50px;
+}
+
+.contagrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    padding: 22px;
+    padding-bottom: 52px;
+
+}
+.conta h3{
+    color: var(--principal);
+}
+.conta{
+    width: fit-content;
+    padding: 22px;
+    text-align: center;
+    border-left: solid 2px var(--principal);
+    border-right: solid 2px var(--principal);
+}
+
 
 /*rodápé -------------------------------------------------------------------------------------------------*/
 
