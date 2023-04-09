@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -12,7 +13,10 @@
 </head>
 <body class="inicio">
     <header class="header headerinicio">
-        <div >
+        <div class="hamburguer">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="biglogo">
             <a href="index.html" ><img src="../img/mazebank_text_logo.png" alt="Maze Bank logo" class="logo"></a>
         </div>
         <div class="navbar">
@@ -22,8 +26,12 @@
                 <a href="" class="botao1">Sobre nós</a>
             </nav>
         </div>
+        
+        <div class="smallLogo">
+            <img src="../img/mazelogo-short.png" alt="Mazebank logo">
+        </div>
         <div class="conta-icon">
-            <a href="" class="conta-icon"><i class="fa-regular fa-circle-user"></i>Entrar em sua conta</a>
+            <a href="" class="conta-icon"><i class="fa-regular fa-circle-user"></i>Entrar <span>em sua conta</span> </a>
         </div>
     </header>
     <main>
@@ -73,6 +81,13 @@
                     <p>Gerencie suas finanças empresariais com serviços bancários personalizados.</p>
                 </div>
             </div>
+            <div class="cartaobtn">
+                <a href="" class="botao1 btncartao">Veja também nossos cartões</a>
+            </div>
+            <h2>Faça sua conta em uma de nossas agências</h2>
+            <picture>
+                <img src="../img/mazeagencias.png" alt="Noassas agências">
+            </picture>
         </section>
     </main>
     <footer class=" footer footerinicio">

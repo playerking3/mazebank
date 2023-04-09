@@ -59,6 +59,11 @@
 .conta-icon{
     text-decoration: none;
     color: var(--texto);
+    text-align: center;
+}
+
+.hamburguer, .smallLogo{
+    display: none;
 }
 /* botões padronizados --------------------------------------------------------- */
 
@@ -104,7 +109,9 @@
     color: var(--background);
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 32px;
+    flex-direction: column;
 }
 
 .vantagens h2{
@@ -186,6 +193,20 @@
     border-right: solid 2px var(--principal);
 }
 
+.cartaobtn{
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+
+.btncartao{
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.contas img{
+    width: 100%;
+}
 
 /*rodápé -------------------------------------------------------------------------------------------------*/
 

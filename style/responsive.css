@@ -1,0 +1,36 @@
+@media(max-width: 1066px){
+    .bemvindo p{
+        font-size: small;
+    }
+}
+
+@media(max-width: 960px){
+    .bemvindo img{
+        display: none;
+    }
+    .bemvindo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 807px){
+    .contagrid, .vantagemgrid{
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    .hamburguer, .smallLogo{
+        display: flex;
+    }
+
+    .smallLogo img{
+        width: 48px;
+    }
+    .logo, .navbar{
+        display: none;
+    }
+
+    .conta-icon span{
+        display: none;
+    }
+}
