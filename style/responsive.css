@@ -15,22 +15,25 @@
     }
 }
 
-@media(max-width: 807px){
-    .contagrid, .vantagemgrid{
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+@media (max-width: 807px) {
+    .contagrid, .vantagemgrid {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     }
-    .hamburguer, .smallLogo{
-        display: flex;
+  
+    .hamburguer, .smallLogo {
+      display: flex;
+      justify-content: center;
     }
-
-    .smallLogo img{
-        width: 48px;
+  
+    .smallLogo img {
+      width: 48px;
     }
-    .logo, .navbar{
-        display: none;
+  
+    .biglogo, .navbar {
+      display: none;
     }
-
-    .conta-icon span{
-        display: none;
+  
+    .conta-icon span {
+      display: none;
     }
-}
+  } 
