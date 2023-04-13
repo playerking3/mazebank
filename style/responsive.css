@@ -23,14 +23,33 @@
         display: flex;
     }
 
+    .hamburguer{
+        font-size: 25px;
+    }
+
     .smallLogo img{
         width: 48px;
     }
-    .logo, .navbar{
+    .biglogo, .navbar{
         display: none;
     }
 
     .conta-icon span{
         display: none;
+    }
+}
+
+@media(max-width: 426px){
+    .contas h1{
+        font-size: 1.5em;
+    }
+    .vantagemgrid{
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .header2, .aberto{
+        font-size: smaller;
     }
 }
