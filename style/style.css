@@ -83,6 +83,18 @@
     display: block;
 }
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slide-down {
+  animation: slideDown 1s forwards;
+}
 /* botões padronizados --------------------------------------------------------- */
 
 .botao1{
