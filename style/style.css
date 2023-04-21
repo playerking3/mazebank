@@ -223,6 +223,7 @@
     text-align: center;
     border-left: solid 2px var(--principal);
     border-right: solid 2px var(--principal);
+    height: 80%;
 }
 
 .cartaobtn{
@@ -238,6 +239,43 @@
 
 .contas img{
     width: 100%;
+}
+
+/*botão para exibir conteudo--------------------------------------------------------------------------------*/
+
+.maisinfo{
+    margin: 8px;
+    height: 0px;    
+    overflow: hidden;
+    text-align: left; !important;
+}
+
+.expand{
+    appearance: none;
+    border: 1px solid var(--background);
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 3px;
+    color: var(--background);
+    transition: 0.3s;
+}
+
+.expand:hover{
+    border: 1px solid var(--principal);
+    color: var(--principal);
+    transition: 0.3s;
+}
+
+.expand::before{
+    content: "Saiba mais";
+}
+
+.expand:checked::before{
+    content: "Fechar";
+}
+
+.maisinfo:has(+ .expand:checked){
+    height: auto;
 }
 
 /*rodápé -------------------------------------------------------------------------------------------------*/
