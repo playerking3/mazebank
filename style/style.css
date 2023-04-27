@@ -241,13 +241,17 @@
     width: 100%;
 }
 
+.subtitle{
+    font-weight: bold;
+}
+
 /*botão para exibir conteudo--------------------------------------------------------------------------------*/
 
 .maisinfo{
     margin: 8px;
     height: 0px;    
     overflow: hidden;
-    text-align: left; !important;
+    text-align: left !important;
 }
 
 .expand{
