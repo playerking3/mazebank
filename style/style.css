@@ -12,6 +12,33 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*fontes personalizadas --------------------------------------------------------*/
+@font-face{
+    font-family: "cano";
+    src: url("../fonts/cano.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "Dancing-Script";
+    src: url('../fonts/DancingScript-Bold.otf') format("opentype");
+}
+
+@font-face{
+    font-family: "DM-sans";
+    src: url("../fonts/DMSans-Regular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Jellee-Roman";
+    src: url("../fonts/Jellee-Roman.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Barista Script";
+    src: url('../fonts/Barista Script.otf.otf') format("opentype");
+}
+
+/*barra de rolagem personalizada ----------------------------------------------*/
 
 *::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
@@ -287,4 +314,123 @@
 .footer{
     background-color: var(--background);
     padding: 18px;
+}
+
+/*página do cartão maze ----------------------------------------------------------------------------------*/
+
+.mazecard{
+    background-color: var(--background);
+}
+
+/*cartão basic -------------------------------------------------------------------------------------------*/
+
+.basic{
+    background-image: url("../img/fundo.png");
+    background-size: cover;
+    color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+
+}
+
+.basicgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.basicgrid div{
+    align-self: center;
+}
+
+.cartaobasic img{
+    width: 100%;
+}
+
+.cardtitulo{
+    font-size: 6rem;
+    text-align: center;
+    animation-name: trocaFonte;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+.basicinfo{
+    text-align: center;
+    margin: 22px;
+}
+
+.basicinfo h2{
+    font-family: "Dancing-Script" !important;
+    font-size: 3em;
+    padding: 12px;
+    color: var(--principal);
+}
+
+.basicinfo p{
+    font-size: large;
+}
+
+/*animação das fontes trocando ----------------------------------------------------------------------*/
+
+@keyframes trocaFonte{
+    0%{
+        font-family: "Dancing-Script";
+    }
+
+    20%{
+        font-family: "Dancing-Script";
+    }
+
+    40%{
+        font-family: "cano";
+    }
+    60%{
+        font-family: "DM-sans";
+    }
+    80%{
+        font-family: "Jellee-Roman";
+    }
+    100%{
+        font-family: "Barista Script";
+    }
+}
+
+/*resto dos cartões de crédito ------------------------------------------------------------------*/
+.basic {
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),50% 100%,0 calc(100% - 30px));
+}
+.rewards {
+  clip-path: polygon(0 0,50% 30px,100% 0,100% 100%,0 100%);
+  margin-top: -20px;
+}
+
+.rewards{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    background-color: var(--texto);
+    color: var(--background);
+}
+
+.rewardimg img{
+    width: 100%;
+}
+
+.rewardtext{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 22px;
+}
+
+.rewardtitle{
+    display: flex;
+    align-items: center;
+}
+
+.rewardfont{
+    font-family: "Barista Script";
+    font-size: xx-large;
+    color: var(--principal);
 }
