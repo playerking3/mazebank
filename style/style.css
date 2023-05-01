@@ -35,7 +35,7 @@
 
 @font-face{
     font-family: "Barista Script";
-    src: url('../fonts/Barista Script.otf.otf') format("opentype");
+    src: url('../fonts/BaristaScript.otf') format("opentype");
 }
 
 /*barra de rolagem personalizada ----------------------------------------------*/
@@ -309,6 +309,34 @@
     height: auto;
 }
 
+/*disclaimer ---------------------------------------------------------------------------------------------*/
+
+#disclaimer{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    position: sticky;
+    top: 0px;
+    height: 0px;
+    z-index: 4;
+
+}
+
+#disclaimer h3{ 
+    background-color: var(--background);
+    padding: 12px;
+    border: 2px solid black;
+}
+#disclaimer button{
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+}
+
 /*rodápé -------------------------------------------------------------------------------------------------*/
 
 .footer{
@@ -398,7 +426,7 @@
     }
 }
 
-/*resto dos cartões de crédito ------------------------------------------------------------------*/
+/*mazecard rewards--------------- ------------------------------------------------------------------*/
 .basic {
   clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),50% 100%,0 calc(100% - 30px));
 }
@@ -433,4 +461,61 @@
     font-family: "Barista Script";
     font-size: xx-large;
     color: var(--principal);
+}
+
+/*mazecard debit ------------------------------------------------------------------------------*/
+
+hr{
+    border: solid 2px var(--background);
+}
+
+.debit{
+    background-color: var(--texto);
+    color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    text-align: center;
+}
+
+.debit h3{
+    margin: 8px;
+    font-size: larger;
+}
+
+.debit span{
+    font-family: "cano";
+    color: var(--principal);
+    font-size: xx-large;
+}
+
+.debitgrid{
+    display: grid;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+.cor{
+    height: 18px;
+    width: 18px;
+    border: 2px solid var(--background);
+    border-radius: 50px;
+    margin: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#debitofoto img{
+    width: 50%;
+}
+
+.seletordcor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
 }
